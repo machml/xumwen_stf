@@ -1,5 +1,5 @@
 # Spatial-Temporal-Forecast
-Some baseline model of Spatial-Temporal Forecasting. Adapted from: [xumwen]https://github.com/xumwen/spatial-temporal-forecast
+Some baseline model of Spatial-Temporal Forecasting. Adapted from: [xumwen](https://github.com/xumwen/spatial-temporal-forecast)
 
  ## Models
  
