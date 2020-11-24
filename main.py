@@ -25,7 +25,7 @@ from preprocess import generate_dataset, load_nyc_sharing_bike_data, load_metr_l
 
 parser = argparse.ArgumentParser(description='Spatial-Temporal-Model')
 parser.add_argument('--backend', choices=['dp', 'ddp'],
-                    help='Backend for data parallel', default='dp')
+                    help='Backend for data parallel', default='ddp')
 parser.add_argument('--log-name', type=str, default='default',
                     help='Experiment name to log')
 parser.add_argument('--log-dir', type=str, default='./logs',
@@ -47,7 +47,7 @@ parser.add_argument('-part', "--gcn-partition", choices=['cluster', 'sample'],
                     default=None)
 parser.add_argument('-batchsize', type=int, default=64,
                     help='Training batch size')
-parser.add_argument('-epochs', type=int, default=100,
+parser.add_argument('-epochs', type=int, default=2,
                     help='Training epochs')
 parser.add_argument('-l', '--loss-criterion', choices=['mse', 'mae'],
                     help='Choose loss criterion', default='mse')
