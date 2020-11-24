@@ -247,7 +247,7 @@ if __name__ == '__main__':
     logger = TestTubeLogger(save_dir=log_dir, name=log_name)
 
     trainer = pl.Trainer(
-        gpus='gpu:1',
+        gpus='cuda:1',
         # auto_select_gpus=True,
         max_epochs=epochs,
         distributed_backend=backend,
