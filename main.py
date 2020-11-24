@@ -89,14 +89,7 @@ class WrapperNet(pl.LightningModule):
 
         self.hparams = hparams
         self.net = model(
-            hparams.num_nodes,
-            hparams.num_edges,
-            hparams.num_features,
-            hparams.num_timesteps_input,
-            hparams.num_timesteps_output,
-            hparams.gcn_type,
-            hparams.gcn_package,
-            hparams.gcn_partition,
+            num_nodes=hparams.num_nodes,
             num_edges=hparams.num_edges,
             num_features=hparams.num_features,
             num_timesteps_input=hparams.num_timesteps_input,
