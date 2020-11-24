@@ -247,10 +247,10 @@ if __name__ == '__main__':
     logger = TestTubeLogger(save_dir=log_dir, name=log_name)
 
     trainer = pl.Trainer(
-        # gpus=1,
-        # auto_select_gpus=True,
+        gpus=1,
+        auto_select_gpus=True,
         max_epochs=epochs,
-        # distributed_backend=backend,
+        distributed_backend=backend,
         callbacks=[early_stop_callback],
         logger=logger,
         track_grad_norm=2
