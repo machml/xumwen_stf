@@ -1,0 +1,9 @@
+key,value
+num_nodes,207
+num_edges,1722
+num_features,2
+num_timesteps_input,12
+num_timesteps_output,3
+gcn_type,cheb
+gcn_package,ours
+gcn_partition,None

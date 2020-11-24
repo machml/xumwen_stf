@@ -1,0 +1,1 @@
+{"name": "default", "version": 2, "tags_path": "./logs/default/version_2/meta_tags.csv", "metrics_path": "./logs/default/version_2/metrics.csv", "autosave": false, "description": null, "created_at": "2020-11-24 17:45:07.492393", "exp_hash": "default_v2"}
