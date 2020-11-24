@@ -53,7 +53,7 @@ class GWNET(nn.Module):
                  gcn_bool=True, addaptadj=True, aptinit=None, 
                  residual_channels=32, dilation_channels=32, 
                  skip_channels=256, end_channels=512,
-                 kernel_size=2, blocks=4, layers=2):
+                 kernel_size=2, blocks=4, layers=2, **kwargs):
         super(GWNET, self).__init__()
         self.dropout = dropout
         self.blocks = blocks
